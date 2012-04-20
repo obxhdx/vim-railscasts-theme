@@ -28,19 +28,23 @@ let g:colors_name = "railscasts"
 
 hi Normal                    guifg=#E6E1DC ctermfg=7 guibg=#2B2B2B
 hi Cursor                    guibg=#FFFFFF ctermbg=15
-hi CursorLine                guibg=#333435
+hi CursorLine                guibg=#333435 ctermbg=236
 hi Search                    guibg=#5A647E ctermbg=60
 hi Visual                    guibg=#5A647E ctermbg=60
 hi LineNr                    guibg=#333435 guifg=#777777 ctermfg=243 gui=NONE
-hi StatusLine                guibg=#414243 ctermbg=238 gui=NONE
+hi StatusLine                guibg=#414243 ctermbg=238 gui=NONE guifg=#E6E1DC ctermfg=7
 hi StatusLineNC              guibg=#414243 ctermbg=238 gui=NONE
-hi VertSplit                 guibg=#414243 ctermbg=238 gui=NONE
-hi NonText                   guifg=#777777 ctermfg=243
+hi VertSplit                 guibg=#414243 ctermbg=238 gui=NONE guifg=#414243 ctermfg=238
 
 " Folds
 " -----
 " line used for closed folds
 hi Folded                    guifg=#F6F3E8 ctermfg=7 guibg=#444444 ctermbg=238 gui=NONE
+
+" Invisible Characters
+" ------------------
+hi NonText                   guifg=#777777 ctermfg=243 gui=NONE
+hi SpecialKey                guifg=#777777 ctermfg=243 gui=NONE
 
 " Misc
 " ----
@@ -126,3 +130,4 @@ hi link htmlEndTag           xmlEndTag
 hi xmlTag                    guifg=#E8BF6A ctermfg=179
 hi xmlTagName                guifg=#E8BF6A ctermfg=179
 hi xmlEndTag                 guifg=#E8BF6A ctermfg=179
+
